@@ -15,8 +15,8 @@ IMAGE_HEIGHT = 64
 IMAGE_WIDTH = 64
 CLASSES_LIST = ['NonViolence', 'Violence']
 
-MoBiLSTM_model = load_model('violence.h5')
-gun_cascade = cv2.CascadeClassifier('cascade.xml')
+MoBiLSTM_model = load_model(r'C:\Users\sneha\OneDrive\Desktop\cv-security\backend\violence.h5')
+gun_cascade = cv2.CascadeClassifier(r'C:\Users\sneha\OneDrive\Desktop\cv-security\backend\cascade.xml')
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
